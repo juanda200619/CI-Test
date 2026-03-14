@@ -12,4 +12,3 @@ def test_calcular_prioridad_alta():
 def test_dias_negativos():
     expected = "Error: Días abierto no puede ser negativo"
     assert calcular_prioridad(-1) == expected
-    
