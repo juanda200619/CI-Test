@@ -1,5 +1,6 @@
-def calcular_prioridad(dias_abierto):
-    if dias_abierto > 5:
+def calcular_prioridad(dias):
+    if dias < 0:
+        return "Error: Días abierto no puede ser negativo"
+    if dias >= 7:
         return "alta"
-    else:
-        return "normal"
+    return "normal"
