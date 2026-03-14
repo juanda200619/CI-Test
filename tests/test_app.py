@@ -7,4 +7,5 @@ def test_calcular_prioridad_alta():
     assert calcular_prioridad(7) == "alta"
 
 def test_dias_negativos():
-    assert calcular_prioridad(-1) == "Error: Días abierto no puede ser negativo"
+    expected = "Error: Días abierto no puede ser negativo"
+    assert calcular_prioridad(-1) == expected
