@@ -27,5 +27,7 @@ jobs:
         run: flake8 . --exclude=venv
 
       - name: Run Tests
+        env:
+          PYTHONPATH: .
         run: |
           pytest tests/
